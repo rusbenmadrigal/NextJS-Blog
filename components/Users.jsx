@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 //"use clients";
 export default function Users({ users }) {
   return (
@@ -12,7 +13,7 @@ export default function Users({ users }) {
               </h5>
               <p className="text-slate-100">E-mail: {user.email}</p>
             </div>
-            <img src={user.avatar} className="rounded-full w-20" />
+            <image src={user.avatar} className="rounded-full w-20" />
           </li>
         </Link>
       ))}
